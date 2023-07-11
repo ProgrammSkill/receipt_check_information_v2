@@ -108,7 +108,7 @@ for value in list_data_from_qr_code:
 data = {
     'data': list_data_checks
 }
-with open(str(abspath(os.curdir)) + "data_checks.json", "w") as json_file:
+with open(str(abspath(os.curdir)) + '\\' + "data_checks.json", "w") as json_file:
     json.dump(data, json_file, ensure_ascii=False, indent=4)
 
 # Connecting to the API
